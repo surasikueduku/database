@@ -1,0 +1,21 @@
+select now() AS "Today's Date"
+
+CREATE TABLE test
+(
+   testId INT PRIMARY KEY AUTO_INCREMENT,
+   test_name VARCHAR(10) NOT NULL,
+   test_date DATE NOT NULL,
+   test_taker VARCHAR(15) NOT NULL
+)
+
+INSERT INTO test (test_name, test_date, test_taker) VALUES
+('Math', '2010-03-10', 'Andrea Kim'), 
+('English', '2014-06-15', 'Andrew Lee'),
+('Literature', '2014-06-15', 'Andy Park'),
+('Music', '2010-12-24', 'Anthony Choi')
+
+SELECT * FROM test
+
+DROP TABLE test
+
+TRUNCATE TABLE test
